@@ -64,14 +64,8 @@ class getVektor:
                     output[i, 2] = V[0]
                     output[i, 3] = V[1]
                     output[i, 4] = oX
-                    output[i, 5] = oY 
-
-                    print(p1)
-                    print(p2)
-                    print(V)
-                    print('----------------------------------------') 
-            
-                
+                    output[i, 5] = oY  
+             
             plt.gca().add_patch(rects)
         
         return output
