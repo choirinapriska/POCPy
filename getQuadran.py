@@ -9,9 +9,9 @@ class getQuadran:
         Quadran = np.empty((len(self.dataA), 6), dtype=object)
 
         for i in range(len(self.dataA)):
-     
-            X = np.int_(self.dataA[i])
-            Y = np.int_(self.dataB[i])
+             
+            X = self.dataA[i]
+            Y = self.dataB[i]
 
             tetha = np.degrees(np.arctan2(Y,X)) + 360*(Y<0)
             magnitude = np.sqrt(np.power(X,2) + np.power(Y,2))
